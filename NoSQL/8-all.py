@@ -3,4 +3,5 @@
 
 
 def list_all(mongo_collection):
+    """Something more useful"""
     return mongo_collection.find()
