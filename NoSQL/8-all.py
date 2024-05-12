@@ -3,7 +3,4 @@
 
 
 def list_all(mongo_collection):
-    if not mongo_collection:
-        return []
-    else:
-        return mongo_collection.find()
+    return mongo_collection.find()
