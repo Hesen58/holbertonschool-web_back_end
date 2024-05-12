@@ -4,4 +4,4 @@
 
 def insert_school(mongo_collection, **kwargs):
     """Something more useful"""
-    mongo_collection.insert(**kwargs)
+    mongo_collection.insert(kwargs)
