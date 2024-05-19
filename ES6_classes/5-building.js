@@ -3,18 +3,12 @@ export default class Building {
     if (typeof sqft !== 'number') {
       throw new TypeError('Sqft must be a number');
     }
-    this.sqft = sqft;
+    this._sqft = sqft;
+    this.evacuationWarningMessage();
   }
 
   get sqft() {
     return this._sqft;
-  }
-
-  set sqft(value) {
-    if (typeof value !== 'number') {
-      throw new TypeError('Sqft must be a number');
-    }
-    this._sqft = value;
   }
 
   evacuationWarningMessage() {
